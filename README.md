@@ -27,5 +27,7 @@ específicas para un proyecto en particular, sin afectar al sistema global de Py
 `cd project`
 `django-admin startproject config .`
 `mkdir apps`
+`cd apps`
+`django-admin startapp core`
 
 
