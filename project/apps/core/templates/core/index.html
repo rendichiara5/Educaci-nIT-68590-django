@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EducacionIT</title>
-</head>
-<body>
-    <h1>Proyecto EducaciónIT</h1>
+{% extends 'core/base.html' %}
+
+{% block content_title %}
+   Proyecto EducaciónIT
+{% endblock content_title %}
+
+{% block content %}
     <a href="{% url 'cliente:index' %}">Ir a Cliente</a>
     <a href="{% url 'producto:index' %}">Ir a Producto</a>
-</body>
-</html>
+{% endblock content %}

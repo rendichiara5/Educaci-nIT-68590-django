@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducacionIT</title>
+</head>
+<body>
+
+    <h1 style="color: blueviolet;">
+        {% block content_title %}
+        {% endblock content_title %}
+    </h1>
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block footer %}
+        <p>Hecho en 2023</p>
+    {% endblock footer %}
+</body>
+</html>

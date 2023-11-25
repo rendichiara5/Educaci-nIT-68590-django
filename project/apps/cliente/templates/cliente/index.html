@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EducacionIT</title>
-</head>
-<body>
-    <h1>CLIENTE</h1>
-    <a href="{% url 'core:index' %}">Ir a Inicio</a>
-</body>
-</html>
+{% extends 'core/base.html' %}
+
+{% block content_title %}
+    CLIENTE
+{% endblock content_title %}
+
+{% block content %}
+
+    {% for cliente in clientes %}
+        <h3>{{ cliente.apellido }}, {{ cliente.nombre }}</h3>
+        <p>{{ cliente.nacimiento }}</p>
+        {% if cliente.pais_origen_id %}
+            <p>{{ cliente.pais_origen_id }}</p> 
+        {% else %}
+            <p>No tiene registro de país de origen</p>
+        {% endif %}
+    {% endfor %}
+
+    {% include 'core/back.html' %}
+{% endblock content %}
