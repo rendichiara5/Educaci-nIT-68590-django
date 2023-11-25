@@ -31,4 +31,11 @@ específicas para un proyecto en particular, sin afectar al sistema global de Py
 `django-admin startapp core`
 `cd ..`
 `python manage.py runserver`
+`python manage.py makemigrations`
+`python manage.py migrate`
+`python manage.py createsuperuser`
 
+## Requirements
+
+`pip freeze >> requirements.txt`
+`pip install -r requirements.txt`
