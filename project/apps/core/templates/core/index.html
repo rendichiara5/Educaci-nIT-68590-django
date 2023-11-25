@@ -5,6 +5,11 @@
 {% endblock content_title %}
 
 {% block content %}
-    <a href="{% url 'cliente:index' %}">Ir a Cliente</a>
-    <a href="{% url 'producto:index' %}">Ir a Producto</a>
+    <button>
+        <a href="{% url 'cliente:index' %}">Ir a Cliente</a>
+    </button>
+    <br>
+    <button>
+        <a href="{% url 'producto:index' %}">Ir a Producto</a>
+    </button>
 {% endblock content %}
