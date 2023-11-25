@@ -29,5 +29,6 @@ específicas para un proyecto en particular, sin afectar al sistema global de Py
 `mkdir apps`
 `cd apps`
 `django-admin startapp core`
-
+`cd ..`
+`python manage.py runserver`
 
